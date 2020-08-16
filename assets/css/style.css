@@ -387,8 +387,8 @@ header .container .grid-box i{
     .mini-portfolio div.image{
     width: 200px;
     height: 200px;
-}
-.mini-portfolio div.image img{
+    }
+    .mini-portfolio div.image img{
     width: 200px;
     height: 200px;
 }
@@ -492,8 +492,8 @@ section h1{
     main{
         padding-top: 70px;
     }
-    }
-/* SLills Section */
+}
+/* Skills Section */
 .skills-details .row {
     padding-left: 0;
 }
@@ -519,7 +519,7 @@ progress[value]::-webkit-progress-value {
 
 
 
-/* REsumE */
+/* Resume */
 .Resume label {
     font-family: "Open Sans bold";
     font-size: 150%;
@@ -582,14 +582,13 @@ progress[value]::-webkit-progress-value {
         height: 230px;
     }
 }
-
 @media all and (max-width: 790px) {
     .Certificates-content ul {
-        width: calc(90vw - 85px);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    width: calc(90vw - 85px);
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
     .Certificates-content ul li {
         display: none;
         width: calc(90vw - 85px);
@@ -717,62 +716,287 @@ span.certificate-filter {
 }
 
 .Certificates-content ul li.first-child {
-    background-image: url("../images/certificates/1593433526006_OTC682_Certificate of Completion_1.jpg");
+    background-image: url("../images/certificates/cert6.jpg");
 }
 
 .Certificates-content ul li.second-child {
-    background-image: url("../images/certificates/Coursera 4JKRRDKSBRHZ_1.jpg");
+    background-image: url("../images/certificates/cert7.jpg");
 }
 
 .Certificates-content ul li.third-child {
-    background-image: url("../images/certificates/Coursera XZU2UCWN5G2A_1(2).jpg");
+    background-image: url("../images/certificates/IMG_8452.jpg");
     background-blend-mode: darken;
 }
 
 .Certificates-content ul li.fourth-child {
-    background-image: url("../images/certificates/Coursera ZBETLW993ZDU_1.jpg");
+    background-image: url("../images/certificates/IMG_8453.jpg");
 }
 
 .Certificates-content ul li.fifth-child {
-    background-image: url("../images/certificates/4i9okr4d (1)_1.jpg");
+    background-image: url("../images/certificates/IMG_8454.jpg");
 }
-
-.Certificates-content ul li.sixth-child {
-    background-image: url("../images/certificates/CSS_certificate.jpg");
-}
-
-.Certificates-content ul li.seventh-child {
-    background-image: url("../images/certificates/HTML_certificate.jpg");
-}
-
-.Certificates-content ul li.eight-child {
-    background-image: url("../images/certificates/jQuery_certificate.jpg");
-}
-
-.Certificates-content ul li.ninth-child {
-    background-image: url("../images/certificates/Project Management Institute (PMI)®_1.jpg");
-}
-
-.Certificates-content ul li.tenth-child {
-    background-image: url("../images/certificates/vr5sf0nl_1.jpg");
-}
-
-.Certificates-content ul li.eleventh-child {
-    background-image: url("../images/certificates/PHP_certificate.jpg");
-}
-
-.Certificates-content ul li.twelfth-child {
-    background-image: url("../images/certificates/LinkedIn Learning Certificate_1.jpg");
-}
-
-.Certificates-content ul li.thirteenth-child {
-    background-image: url("../images/certificates/LinkedIn Learning Certificate(4)_1.jpg");
-}
-
 .Certificates-content ul li.fourteen-child {
-    background-image: url("../images/certificates/LinkedIn Learning Certificate(3)_1.jpg");
+    background-image: url("../images/certificates/IMG_8455.jpg");
 }
 
 .Certificates-content ul li.fifteenth-child {
-    background-image: url("../images/certificates/LinkedIn Learning Certificate(2)_1.jpg");
+    background-image: url("../images/certificates/IMG_8456.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Us */
+section.Contact {}
+
+.ContactJustify {
+    display: flex;
+    padding-top: 12px;
+    height: 300px;
+}
+
+.Contactform {
+    width: 40%;
+    display: grid;
+    height: 200px;
+
+}
+
+.ContactMessage {
+    width: 60%;
+    display: grid;
+    height: 400px;
+
+}
+
+.ContactformContect {
+    display: flex;
+}
+
+.ContactformContectIcon {
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ContactformContectIcon i {
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 100%;
+    font-size: 110%;
+    background-color: var(--yellow--);
+    color: white;
+
+}
+
+.ContactformContectname h3 {
+    padding: 0;
+    font-family: "Open Sans Regular";
+    color: var(--black--);
+    font-size: 25px;
+    margin: 0;
+}
+
+.ContactformContectvalue {
+    margin-top: -10px;
+}
+
+.name-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstName,
+#lastName {
+    padding: 0px;
+    width: 47%;
+    padding-left: 20px;
+    height: 40px;
+    box-shadow: 0 0 0 1px inset #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+#firstName:hover,
+#lastName:hover {
+    box-shadow: 0 0 0 1px inset var(--yellow--);
+}
+
+#firstName::placeholder,
+#lastName::placeholder,
+#projectName::placeholder {
+    font-family: 'Open Sans Regular';
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+}
+
+form {
+    display: grid;
+    width: 100%;
+    height: 250px;
+}
+
+
+#projectName {
+    width: 100%;
+    padding-left: 20px;
+    height: 40px;
+    box-shadow: 0 0 0 1px inset #cccccc;
+    border-radius: 5px;
+}
+#projectName:hover {
+    box-shadow: 0 0 0 1px inset var(--yellow--);
+}
+textarea {
+    min-height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    box-shadow: 0 0 0 1px inset #cccccc;
+    border-radius: 5px;
+    transition: box-shadow 0.5s ease-in-out;
+    font-family: 'Open Sans Regular';
+}
+
+textarea:hover {
+    box-shadow: 0 0 0 1px inset var(--yellow--);
+}
+
+textarea::placeholder {
+    font-family: 'Open Sans Regular';
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+}
+
+input[type='submit'] {
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 23px;
+    background-color: var(--yellow--);
+    font-family: "Open Sans Regular";
+    color: white;
+    font-size: 105%;
+}
+
+input[type='submit']:hover {
+    background-color: var(--yellow--);
+    cursor: pointer;
+}
+
+@media all and (max-width: 940px) {
+    .ContactJustify {
+        display: grid;
+        justify-content: center;
+        height: 550px;
+    }
+
+    .ContactMessage {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .Contactform {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .ContactformContectvalue p {
+        text-align: left;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .name-flex {
+        display: grid;
+    }
+
+    #firstName,
+    #lastName {
+        width: 90vw;
+        margin-bottom: 0px;
+    }
+}
+
+/* Footer Design*/
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #d9d9d9;
+}
+footer .social-links {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 250px;
+}
+
+footer .social-links a {
+    padding: 10px;
+}
+
+footer .social-links i {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--black--);
+    color: white;
+}
+@media all and (max-width: 380px){
+    footer h1 {
+        font-size:10vw;
+    }
+}
+/* COrrectin MAnual*/
+@media all and (max-width: 382px){
+    span.certificate-filter {
+        width: auto;
+    }
+}
+@media all and (max-width: 337px){
+    .Certificates-content ul li{
+        background-position: center;
+        background-size: 100% auto;
+        box-shadow: 0 0 0 0px black inset;
+            width: 100%;
+    }
+}
+@media all and (max-width: 350px){
+    .iicon-box {
+        width: 105%;
+    }
+}
+@media all and (max-width: 300px){
+    footer .social-links{
+        width: 100%;
+    }
+    footer .social-links i {
+        font-size: 5vw;
+    }
+    footer .social-links a {
+    padding: 1vw;
+}
+}
+@media (max-width: 453px){
+.about-details img {
+    height: auto;
+}
+}
+
+.menu-bar-open, .menu-bar-close {
+    z-index: 999999;
 }
