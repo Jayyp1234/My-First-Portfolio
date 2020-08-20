@@ -590,7 +590,6 @@ progress[value]::-webkit-progress-value {
     margin-right: auto;
 }
     .Certificates-content ul li {
-        display: none;
         width: calc(90vw - 85px);
         height: 450px;
     }
@@ -638,7 +637,6 @@ progress[value]::-webkit-progress-value {
 
 @media all and (max-width: 650px) {
     .Certificates-content ul li {
-        display: none;
         width: calc(90vw - 85px);
         height: 350px;
     }
@@ -654,7 +652,6 @@ progress[value]::-webkit-progress-value {
 
 @media all and (max-width: 575px) {
     .Certificates-content ul li {
-        display: none;
         width: calc(90vw - 82px);
         height: 280px;
     }
@@ -670,7 +667,6 @@ progress[value]::-webkit-progress-value {
 
 @media all and (max-width: 468px) {
     .Certificates-content ul li {
-        display: none;
         margin-bottom: 5px;
         width: calc(90vw - 82px);
         height: 200px;
