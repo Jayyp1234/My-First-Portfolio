@@ -27,7 +27,7 @@
 				<abbr title="Certificates"> <a href="#Certificates"> <li> <i class="little-smaller "> <i class="icon-certificate "></i></i><span>&nbsp;&nbsp;&nbsp;Certificates</span></li> </a> </abbr>
 				<abbr title="Resume">  <a href="#Resume"><li> <i class="little-smaller "> <i class="icon-file-o"></i></i><span>&nbsp;&nbsp;&nbsp;Resume</span></li></a> </abbr>
 
-				<abbr title="Services"> <a href="#services"><li><i class="little-smaller"> <i class="icon-server"></i></i><span>&nbsp;&nbsp;&nbsp;Services</span></li> </abbr>
+				<!--<abbr title="Services"> <a href="#services"><li><i class="little-smaller"> <i class="icon-server"></i></i><span>&nbsp;&nbsp;&nbsp;Services</span></li> </abbr> -->
 				<abbr title="Contact">  <a href="#Contact"><li><i class="little-smaller"><i class="icon-envelope"></i></i><span>&nbsp;&nbsp;&nbsp;Contact</span></li></a> </abbr>
 			</ul>
 		</div>
@@ -81,7 +81,7 @@
 					<li> <b>PHONE</b> : +2348030714963</li>
 					<li> <b>CITY</b> : Lagos, Nigeria</li>
 					<li> <b>EMAIL</b> : emmanueloffisong2002@yahoo.com</li>
-					<li> <b> HOBBIES </b>Reading, Learning new things, Working on projects, Meeting new people </li>
+					<li> <b> HOBBIES :</b>Reading, Learning new things, Working on projects, Meeting new people </li>
 					<li style="padding-left: 50px;padding-right: 50px;"> <b> FAVOURITE QUOTE </b> It takes desicion to be precise and manableing to become one's true desire </li>
 				</ul>
 				<ul class="social-links" style=" width:200px;justify-content: space-between;margin:auto; padding-top: 32px;line-height: 1.5;display: flex;">
@@ -104,8 +104,8 @@
 					<img src="assets/images/picture6 (2).jpg" width="300px" height="330px" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 				</div>
 				<div class="aboutme-contents">
-					<p style="font-family:'Open Sans Regular';font-size: 90%; ">Welcome to my Portfolio. Welcome to my World!!. I am just going to summarize everything about me, my visions, my aims and objectives.My visions, as already stated earlier is to make many people in Nigeria join this technological revolution. Who said Nigeria does not have any thing to offer? Who said Nigeria can not be a developed country? Who said Nigeria does not have anything to offer in terms of science and technology? Who said Nigerian youths are lazy and untalented? It's high time youths stopped believing the negative things they've heard about this country and start believing in their skills. To get youths to do this, we have to discover their potentials and make sure they maximize it. It's high time youths discovered their talents in the technology aspect and maximized it.To do this, I, alongside some like minded friends want to develop a medium whereby youths will be trained, involve themselves in some projects and give back to the society.</p>
-					<p style="font-family:'Open Sans Regular';font-size: 90%;"> I, OFFISONG EMMANUEL ETIM was born on the 20th of July ,2002.Offisong hails from Ikono Offi in Akwa Ibom State in Nigeria. He is very disciplined, dedicated and enthusiastic. I am currently studying Systems Engineering in the prestigeous University of Lagos. I am currently learning sub-skills in Data-Science,Artificial Intelligence and AWS Cloud Computing with the sole aim of using embedded systems and Artificial Intelligence to make lives easier and better in Nigeria and in the world at large.I have a strong vision and I am working towards the betterment of the world at large.I am currently engaging in many volunteer experiences to give back to the society and motivate people to reach their full potentials. I am also creating a team that gives technological services to people and trains people in the technological aspect free of charge. Technology is going to revolutionize the world. It's high time we joined that revolution.</p>
+					<p style="font-family:'Open Sans Regular';font-size: 85%;"> I, OFFISONG EMMANUEL ETIM was born on the 20th of July ,2002.Offisong hails from Ikono Offi in Akwa Ibom State in Nigeria. He is very disciplined, dedicated and enthusiastic. I am currently studying Systems Engineering in the prestigeous University of Lagos. I am currently learning sub-skills in Data-Science,Artificial Intelligence and AWS Cloud Computing with the sole aim of using embedded systems and Artificial Intelligence to make lives easier and better in Nigeria and in the world at large.I have a strong vision and I am working towards the betterment of the world at large.I am currently engaging in many volunteer experiences to give back to the society and motivate people to reach their full potentials. I am also creating a team that gives technological services to people and trains people in the technological aspect free of charge. Technology is going to revolutionize the world. It's high time we joined that revolution.</p>
+						<p style="font-family:'Open Sans Regular';font-size: 85%; ">Welcome to my Portfolio. Welcome to my World!!. I am just going to summarize everything about me, my visions, my aims and objectives.My visions, as already stated earlier is to make many people in Nigeria join this technological revolution. Who said Nigeria does not have any thing to offer? Who said Nigeria can not be a developed country? Who said Nigeria does not have anything to offer in terms of science and technology? Who said Nigerian youths are lazy and untalented? It's high time youths stopped believing the negative things they've heard about this country and start believing in their skills. To get youths to do this, we have to discover their potentials and make sure they maximize it. It's high time youths discovered their talents in the technology aspect and maximized it.To do this, I, alongside some like minded friends want to develop a medium whereby youths will be trained, involve themselves in some projects and give back to the society.</p>
 				</div>	
 			</div>
 		</section>
@@ -280,16 +280,17 @@
 					</div>
 				</div>
 				<div class="ContactMessage">
-				<form method="POST" action="/index.php">
+				<form action="POST" data-netlify="true">
 					<div class="name-flex">
-						<input type="text" name="client_name" placeholder="Name"  id="firstName" class="first-name"><br>
-						<div><span style="" class="form-error">  </span></div>
-						<input type="text" style="margin-left: auto;" name="client_email" placeholder="Email" id="lastName"  class="last-name"><br>
-						<div><span class="form-error">    </span></div>
+						<input type="text" name="name" placeholder="Name"  id="firstName" class="first-name" required="true"><br>
+						
+						<input type="text" style="margin-left: auto;" name="email" placeholder="Email" id="lastName"  class="last-name" required="true"><br>
+						
 					</div>
-					<input type="text" name="client_subject" placeholder="Subject" id="projectName" class="project-name"><br><div><span class="form-error-msg"></span></div>
-					<textarea class="description" name="message"  placeholder="Type your Message here" id="projectDescription" class="project-description"></textarea>
-					<div><span class="form-error-msg">  </span></div>
+					<input type="text" name="subject" placeholder="Subject" id="projectName" class="project-name" ><br>
+
+					<textarea class="description" name="message"  placeholder="Type your Message here" id="projectDescription" class="project-description" required="true"></textarea>
+					
 					<input type="submit" value="Submit" name="ContactUS" class="submit-response">
 			</form>
 				</div>
